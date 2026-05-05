@@ -31,6 +31,7 @@ document.getElementById('btn-render-usuarios').addEventListener('click', async (
         users.forEach(user => {
             const li = document.createElement('li');
             li.textContent = `Nome: ${user.name} - Email: ${user.email}`;
+            //Adiciona o elemento <li> que criamos dentro da sua lista (<ul>), no final
             lista.appendChild(li);
         });
     } catch (error) {
