@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Minha API - Exercícios</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+        <h1>Exercícios de Consumo de API</h1>
+
+        <section class="card">
+            <h2>1. Usuários (Console e Tela)</h2>
+            <button id="btn-buscar-usuarios">Buscar Usuários (Console)</button>
+            <button id="btn-render-usuarios">Renderizar Usuários (Tela)</button>
+            <ul id="lista-usuarios"></ul>
+        </section>
+
+        <section class="card">
+            <h2>2. Posts (3 Posts Lado a Lado)</h2>
+            <button id="btn-carregar-posts">Carregar Posts</button>
+            <div id="container-posts" class="flex-container"></div>
+        </section>
+
+        <section class="card">
+            <h2>3. Criar Novo Post</h2>
+            <form id="form-post">
+                <input type="text" id="titulo-post" placeholder="Título do Post" required>
+                <textarea id="texto-post" placeholder="Escreva o texto do post..." required></textarea>
+                <button type="submit">Criar Post</button>
+            </form>
+            <div id="novo-post-container"></div>
+        </section>
+
+        <section class="card">
+            <h2>4. Carregar Dados de API</h2>
+            <button id="btn-carregar-geral">Carregar Dados</button>
+            <div id="dados-gerais-container"></div>
+        </section>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
